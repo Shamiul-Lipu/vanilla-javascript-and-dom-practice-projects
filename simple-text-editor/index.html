@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bank Functionality</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <!-- -------------- -->
+    <header class="my-7">
+        <h1 class="text-center text-5xl text-cyan-800">Simple <span class="text-cyan-500 font-medium">Text Editor</span>
+        </h1>
+    </header>
+    <!-- Main section -->
+    <main class="my-10 container mx-auto lg:max-w-4xl px-4">
+        <!-- Functionality Section -->
+        <section class="bg-blue-400 py-10 px-24 drop-shadow-2xl shadow-black rounded-2xl">
+            <div class="py-12 px-4 bg-blue-200 rounded-sm border-2 border-black">
+                <!-- action -->
+                <div class="pb-3 mb-4 border-b-2 border-b-black  flex justify-between items-center">
+                    <!-- Font style -->
+                    <ul class="flex gap-4">
+                        <!-- bold -->
+                        <li id="btn-bold" class="font-extrabold cursor-pointer">B</li>
+                        <!-- italic -->
+                        <li id="btn-italic" class="font-bold italic cursor-pointer">I</li>
+                        <!-- under  -->
+                        <li id="btn-underline" class="font-bold underline cursor-pointer">U</li>
+                    </ul>
+                    <!-- Text align -->
+                    <ul class="flex gap-4">
+                        <!-- left -->
+                        <li id="btn-left" class="h-4 w-4 cursor-pointer"><img src="images/align-left.png" alt=""></li>
+                        <!-- center -->
+                        <li id="btn-center" class="h-4 w-4 cursor-pointer"><img src="images/center.png" alt=""></li>
+                        <!-- right  -->
+                        <li id="btn-right" class="h-4 w-4 cursor-pointer"><img src="images/align-right.png" alt=""></li>
+                        <!-- junsify -->
+                        <li id="btn-junsify" class="h-4 w-4 cursor-pointer"><img src="images/justify.png" alt=""></li>
+                    </ul>
+                    <!-- Text Transform -->
+                    <ul class="flex gap-4">
+                        <!-- font-size -->
+                        <li>
+                            <input id="font-size" class="px-0" type="number" placeholder="17" min="17" max="45">
+                        </li>
+                        <!-- italic -->
+                        <li>aA</li>
+                        <!-- color  -->
+                        <li><input type="color" id="color-select" name="head" value="#000000"></li>
+                    </ul>
+
+                </div>
+                <div class="flex ">
+                    <textarea id="input-text" class="p-4 w-full h-64" name="" cols="70" rows="10"
+                        placeholder="write here"></textarea>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Javascript Files -->
+    <script src="js/fontStyle.js"></script>
+    <script src="js/textAlign.js"></script>
+    <script src="js/other.js"></script>
+</body>
+
+</html>

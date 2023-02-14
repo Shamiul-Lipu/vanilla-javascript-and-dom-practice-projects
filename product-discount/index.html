@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-4xl text-sky-900 font-medium my-10 text-center">Discount %</h1>
+    </header>
+    <main class="my-7">
+        <section class="grid grid-cols-2 gap-5">
+            <!-- Card: Apply 30% discount -->
+            <div class="flex justify-center ">
+                <div class="flex flex-col h-96 md:flex-row md:max-w-xl rounded-lg  shadow-lg">
+                    <!-- product img -->
+                    <img class="bg-white w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
+                        src="p1.jpg" alt="" />
+                    <!-- product details-->
+                    <div class="p-6 flex flex-col justify-start">
+                        <h1 class="text-2xl font-medium">Omuk Water Bottle</h1>
+                        <p class="font-sans py-2">NO LEAKS WITH AUTOSPOUT TECHNOLOGY: Spout pops up for easy drinking
+                            from
+                            the straw; seals
+                            with straw down for no spills
+                            VACUUM-INSULATED: Double-wall vacuum-insulated </p>
+                        <p></p>
+                        <!-- displayed -->
+                        <div
+                            class="text-gray-900 text-xl font-medium mb-2 py-2 px-3 border bg-sky-100 border-neutral-900 rounded-md">
+                            <!-- Price -->
+                            <h5 class="text-xl font-bold">Price: $<span id="displayed-price">1000</span></h5>
+                            <h6 class="">30% Discount</h6>
+                            <!-- Apply button -->
+                            <button id="btn-apply"
+                                class="bg-red-600 text-white px-8 py-1 rounded-md hover:bg-red-900 shadow-2xl">Apply</button>
+                        </div>
+                        <p class="text-gray-600 text-xs">Last updated few mins ago</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card: Apply Coupon discount -->
+            <div class="flex justify-center ">
+                <div class="flex flex-col h-96 md:flex-row md:max-w-xl rounded-lg  shadow-lg">
+                    <!-- product img -->
+                    <img class="bg-white w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
+                        src="p3.jpg" alt="" />
+                    <!-- product details-->
+                    <div class="p-6 flex flex-col justify-start">
+                        <h1 class="text-2xl font-medium">Tomuk Water Bottle</h1>
+                        <p class="font-sans py-2">NO LEAKS WITH AUTOSPOUT TECHNOLOGY: Spout pops up for easy drinking
+                            from
+                            the straw; seals
+                            with straw down for no spills
+                            VACUUM-INSULATED: Double-wall vacuum-insulated </p>
+                        <p></p>
+                        <!-- displayed -->
+                        <div
+                            class="text-gray-900 text-xl font-medium mb-2 py-2 px-3 border bg-green-50 border-neutral-900 rounded-md">
+                            <!-- Price -->
+                            <h5 class="text-xl font-bold">Price: $<span id="displayed-price-coup">1000</span></h5>
+                            <h6 class="font-light">Enter code: <span class="text-red-500">"COU30D"</span>
+                                <br> for <span class="text-gray-900 text-xl font-medium">30% Discount</span>
+                            </h6>
+                            <!-- Apply coupon -->
+                            <input id="input-coupon"
+                                class="py-1 px-7 text-black font-normal my-3 bg-gray-200 border-2 border-green-800 rounded-md"
+                                type="text" placeholder="enter coupon">
+                            <button id="btn-apply-coupon"
+                                class="bg-red-600 text-white px-8 py-1 rounded-md hover:bg-red-900 shadow-2xl">Apply
+                                Coupon</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript File -->
+    <script src="js/calculate.js"></script>
+</body>
+
+</html>
